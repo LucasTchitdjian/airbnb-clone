@@ -5,7 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Hello from '../src/components/hello'
 
-ReactDOM.render(<Hello />,document.getElementById('root'));
+ReactDOM.render(<Hello firstName="Lucas" lastName="Tchitdjian" />,document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
