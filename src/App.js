@@ -39,7 +39,7 @@ class App extends Component {
           </div>
           <div className='flats'>
             {this.state.flats.map((flat) => {
-              return <Flat flat={flat} />
+              return <Flat key={flat.name} flat={flat} />
             })}
           </div>
         </div>
@@ -49,7 +49,7 @@ class App extends Component {
             defaultZoom={defaultProps.zoom}
           >
           {this.state.flats.map((flat) => {
-              return <Marker lat={flat.lat} lng={flat.lng} text={flat.price} />
+              return <Marker key={flat.name} lat={flat.lat} lng={flat.lng} text={flat.price} />
             })}
           </GoogleMapReact>
         </div>
